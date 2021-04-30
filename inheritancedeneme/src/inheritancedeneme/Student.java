@@ -2,15 +2,15 @@ package inheritancedeneme;
 
 public class Student extends User{
 	private String classroom;
-	private int not;
-	private int vize;
-	private int sonvize;
+	private double not;
+	private double vize;
+	private double sonvize;
 	
 	public Student() {
 		
 	}
 	
-	public Student(String classroom, int not, int vize, int sonvize) {
+	public Student(String classroom, double not, double vize, double sonvize) {
 		this();
 		this.classroom = classroom;
 		this.not = not;
@@ -32,11 +32,11 @@ public class Student extends User{
 
 	
 
-	public int getVize() {
+	public double getVize() {
 		return vize;
 	}
 
-	public void setVize(int vize) {
+	public void setVize(double vize) {
 		this.vize = vize;
 	}
 
@@ -44,7 +44,7 @@ public class Student extends User{
 		return this.sonvize;
 	}
 	
-	public void setSonVize(int sonvize) {
+	public void setSonVize(double sonvize) {
 		this.sonvize = sonvize;
 	}
 	
