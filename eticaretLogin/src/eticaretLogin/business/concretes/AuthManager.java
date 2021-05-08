@@ -31,7 +31,7 @@ public class AuthManager implements AuthService {
 	}
 	@Override
 	public boolean userValidate(User user) {
-		if(user.getFirstName()!=null && (user.getFirstName().length()>2 && user.getLasrName().length()>2)) {
+		if(user.getFirstName()!=null && (user.getFirstName().length()>2 && user.getLasrName().length()>2) && user.getPassword().length()>6) {
 			return true;
 		}
 		return false;
